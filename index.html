@@ -1,0 +1,1828 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Access-Control-Allow-Origin" content="*">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+   <title>GOLDZIP</title>
+   <link rel="shortcut icon"  href="image/currency.png" type="image/x-icon">
+   <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+   <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <style type="text/css">
+
+    @font-face{
+      font-family: 'YaHei Consolas Hybrid';
+      src : url('image/sansation_bold.ttf');
+    }
+    @font-face{
+      font-family: 'YaHei Consolas light';
+      src : url('image/sansation_light.ttf');
+    }
+    @font-face{
+      font-family: 'YaHei Consolas regular';
+      src : url('image/sansation_regular.ttf');
+    }
+     *{
+      margin: 0px;
+      padding: 0px;
+     }
+     a{
+      text-decoration: none;
+     }
+     a:focus, a:hover {
+        color: #23527c;
+        text-decoration: none;
+      }
+
+     ul,li{
+      list-style: none;
+     }
+     .gzip{
+      min-width: 1820px;
+     }
+     .headerBox{
+        background-image: url(image/CGSE_BANNER.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 100% 100%;
+        height: 800px;
+        position: relative;
+        font-family: 'YaHei Consolas Hybrid';
+     }
+     .headerBox .gol{
+        border-bottom: 2px solid #C8C2B3;
+        color: #fff;
+        padding: 20px 47px 0px 47px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+     }
+     .headerBox .gol h3{
+      text-align: center;
+     }
+
+
+     .buyCzip{
+     }
+     .buyCzip div{
+      padding: 0px 30px;
+      border-right: 1px solid #fff;
+
+     }
+     .buyCzip p{
+      color: #62F565;
+      font-size: 23px
+     }
+     .gol a{
+      font-size: 25px;
+      color: #FEFEFE;
+      margin: 0px 20px;
+     }
+     .headerBox h1{
+      color: #fff;
+      text-align: center;
+      margin-top: 50px;
+      font-size: 50px;
+     }
+     .stable{
+      position: absolute;
+      bottom: 2%;
+      left: 50%;
+      transform: translate(-50%,0%);
+      color: #fff;
+      font-size: 50px;
+     }
+
+
+     .aboutBox{
+      font-family: 'YaHei Consolas light';
+      width: 1060px;
+      margin: auto;
+
+     }
+     .aboutBox h4{
+      color: #242424;
+      font-size: 30px;
+      margin-top: 80px;
+      margin-bottom: 40px;
+      font-family: 'YaHei Consolas regular';
+     }
+     .aboutBox p{
+      font-size: 28px;
+      color: #242424;
+      margin-bottom: 50px;
+     }
+
+
+
+     /**/
+     .credible ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-family: 'YaHei Consolas light';
+     }
+     .credible h3{
+      font-family: 'YaHei Consolas regular';
+      font-size: 30px;
+     }
+	 .credible h2{
+		text-indent:30px;
+		font-family: 'YaHei Consolas regular';
+		font-size:33px;
+	 }
+     .credible li{
+        width:100%;
+		padding: 11px 40px;
+     }
+     .credible .dl{
+      font-size: 23px;
+     }
+     .credible .dl a{
+      color: #242424;
+      font-family: 'YaHei Consolas regular';
+     }
+     .credible .dl img{
+      margin-right: 5px;
+      width: 30px;
+     }
+
+     .credible p{
+
+      font-size: 28px;
+      color: #242424;
+     }
+
+
+
+     .chinese{
+        font-family: 'YaHei Consolas light';
+
+     }
+     .chinese p{
+      font-size: 28px;
+      color: #2F2F2F;
+     }
+     .chinese h3{
+      color: #242424;
+      font-family: 'YaHei Consolas regular';
+      font-size: 30px;
+      margin-top: 80px;
+      margin-bottom: 40px;
+     }
+     .chinese .banr{
+      padding: 20px 55px;
+     }
+
+
+     .major{
+      width: 1225px;
+      margin: auto;
+      font-family: 'YaHei Consolas regular';
+     }
+     .major h3{
+      font-size: 30px;
+     }
+     .major h4{
+      padding: 10px 50px;
+      font-size: 28px;
+      color: #585858;
+      font-family: 'YaHei Consolas light';
+     }
+
+
+
+
+     .membersBox{
+      font-family: 'YaHei Consolas light';
+      margin: 40px 0px;
+
+     }
+     .membersBox h4{
+      font-size: 30px;
+      color: #242424;
+      font-family: 'YaHei Consolas light';
+     }
+     .membersBox p{
+      font-size: 28px;
+      color: #242424;
+      font-family: 'YaHei Consolas light';
+     }
+     .membersBox li{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 35px 0px;
+     }
+
+
+
+     .affilate{
+
+     }
+     .affilate h4{
+      color: #242424;
+      font-size: 30px;
+      margin-bottom: 40px;
+     }
+     .affilate p{
+      font-size: 28px;
+      color: #242424;
+      margin-bottom: 30px;
+     }
+     .affilate a{
+      color: #666666;
+     }
+
+
+
+     .maling{
+
+     }
+     .maling{
+      margin: 40px 0px;
+     }
+
+
+
+     .powered{
+      margin-top: 100px;
+      margin-bottom: 150px;
+     }
+
+
+
+     .cgse ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        font-family: 'YaHei Consolas light';
+     }
+     .cgse{
+      background-color: #4C4C4C;
+      padding: 20px 35px;
+     }
+     .cgse h5{
+      color: #ff9c00;
+      font-size: 20px;
+      font-family: 'YaHei Consolas regular';
+     }
+     .cgse p{
+      font-size: 18px;
+      color: #fff;
+	  cursor: pointer;
+     }
+
+
+      .lan,.lan1{
+        display: none;
+      }
+
+
+      #oneBox{
+        width: 1400px;
+      }
+
+
+
+
+      .newBox{
+      }
+      .newBox li{
+        display: block;
+        border: 1px solid #000;
+        padding: 25px;
+        border-radius: 5px;
+        width: 320px;
+        height: 410px;
+        position: relative;
+      }
+      .newBox li label{
+        position: absolute;
+        left: 0px;
+        bottom: -35px;
+      }
+      .newBox ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        text-align: center;
+      }
+      .newBox li img{
+        width: 140px;
+      }
+      .newBox li h5{
+        font-size: 20px;
+        color: #242424;
+      }
+      .newBox li p{
+        font-size: 28px;
+        color: #242424;
+        margin-top: 55px;
+        margin-bottom: 20px;
+      }
+      .newBox li a{
+        font-size: 20px;
+        color: #242424;
+        float: left;
+        text-decoration: underline;
+      }
+
+
+
+
+
+      .meetUs h4{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 50px;
+      }
+      .meetUs h5{
+        font-size: 30px;
+        text-align: center;
+        color: #000;
+        font-weight: bold;
+      }
+      .meetUs ul{
+		border: 1px solid #FFBD1F;
+		padding-left: 25px;
+		height: 860px;
+		overflow: auto;
+      }
+      .meetUs li{
+        display: block;
+      }
+      .meetUs p{
+        display: block;
+        margin: 25px 0px;
+      }
+
+
+      .webNav{
+        display: none;
+      }
+	  
+	  
+
+
+
+    .webBackNav{
+      color: #fff;
+      position: relative;
+    }
+    .newBack{
+      height: 375px;
+      background-image: url(image/e00675a39c7144215958da552b8f118.jpg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 100% 100%;
+      position: relative;
+    }
+    .webBackNav .buyCzipBox div{
+      padding: 0px;
+      border: none;
+      border-bottom: 1px solid #fff;
+    }
+    .webBackNav .buyCzipBox{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;font-family: 'YaHei Consolas regular';
+    }
+    .webBackNav h4{
+      font-size: 17px;
+    }
+    .webBackNav h3{
+      font-size: 17px;
+    }
+    .webBackNav h2{
+      font-size: 17px;
+    }
+    .webBackNav p{
+      font-size: 17px;
+    }
+	  .webBackNav ul.text-center{
+      position: absolute;
+      top: 66px;
+      left: 0px;
+      width: 100%;
+      display: none;
+      background-color: #000;
+    }
+    .webBackNav ul.text-center a{
+      color: #fff;
+    }
+
+    .webNavBox{
+      display: none;
+    }
+
+    .webNav p img{
+      margin-top: 7px;
+    }
+
+      @media screen and (max-width: 900px) {
+		 .credible h2{
+			text-indent:0px;
+		 }
+		.chinese .banr{
+			padding:13px 0px;
+		}
+        .gzip{
+          min-width: auto;
+        }
+        .headerBox{
+          height: auto;
+        }
+        .headerBox .gol,.headerBox h1,.stable,.col-xs-1,.cgse{
+          display: none;
+        }
+        .aboutBox,#oneBox,.major{
+          width: auto;
+        }
+        .aboutBox p img,.meetUs img,.powered img,.maling img,.col-xs-9{
+          width: 100%;
+        }
+        .credible ul,.membersBox li,.newBox ul,.webNav,.webNavBox{
+          display: block;
+        }
+        .meetUs ul{
+          padding: 13px;
+        }
+        .major h4{
+          padding: 0px;
+        }
+        .membersBox li{
+          text-align: center;
+        }
+        .membersBox li img{
+          margin: 5px 0px;
+        }
+        .meetUs p,.affilate a{
+          word-wrap: break-word;
+        }
+        .powered{
+          margin: 13px 0px;
+        }
+        .newBox li{
+          width: 100%;
+        }
+        .credible li{
+          padding: 0px;
+        }
+        .aboutBox h4{
+          margin-top: 11px;
+          margin-bottom: 11px;
+        }
+      }
+
+
+
+      .webNav p{
+        padding: 7px 13px;
+        text-align: right;
+      }
+      .webNav ul{
+        background-color: #efefef;
+        padding: 13px 0px;
+      }
+      .webNav li{
+        margin: 13px 0px;
+      }
+      .webNav a{
+        font-size: 19px;
+        color: #999;
+      }
+	  .webNav span{
+		color:#999;
+	  }
+	 .popupBox{
+		position: fixed;
+		background: #fff;
+		z-index: 11;
+		top: 50%;
+		left: 50%;
+		transform : translate(-50%,-50%);
+		padding: 23px;
+		z-index: 111111;
+		display: none;
+		border: 1px solid #777;
+		border-radius: 7px;
+	 }
+	 .popupBox div{
+		max-width: 900px;
+		height: 500px;
+		overflow: auto;
+	 }
+	 
+	 .popupBox img{
+		cursor: pointer;
+	 }
+   </style>
+</head>
+<body>
+
+
+
+  <div class="gzip">
+	<div class="popupBox">
+		<p class="text-right">
+			<img src="image/820569279443600453.png"/>
+		</p>
+		<div class="">
+			<h1>
+				Privacy Policy of GoldZip
+			</h1>
+			<h4>
+				GoldZip operates the www.Goldzip.com website, which provides the SERVICE
+			</h4>
+			<p>
+				This page is used to inform website visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service, the GoldZip website.
+			</p>
+			<p>
+				If you choose to use our Service, then you agree to the collection and use of information in relation with this policy. The Personal Information that we collect are used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.
+			</p>
+			<p>
+				The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at www.Goldzip.com, unless otherwise defined in this Privacy Policy.
+			</p>
+			<h4>
+				Information Collection and Use
+			</h4>
+			<p>
+				For a better experience while using our Service, we may require you to provide us with certain personally identifiable information, including but not limited to your name, phone number, and postal address. The information that we collect will be used to contact or identify you.
+			</p>
+			<h4>
+				Log Data
+			</h4>
+			<p>
+				We want to inform you that whenever you visit our Service, we collect information that your browser sends to us that is called Log Data. This Log Data may include information such as your computer’s Internet Protocol ("IP") address, browser version, pages of our Service that you visit, the time and date of your visit, the time spent on those pages, and other statistics.
+			</p>
+			<h4>
+				Cookies
+			</h4>
+			<p>
+				Cookies are files with small amount of data that is commonly used an anonymous unique identifier. These are sent to your browser from the website that you visit and are stored on your computer’s hard drive.
+			</p>
+			<p>
+				Our website uses these "cookies" to collection information and to improve our Service. You have the option to either accept or refuse these cookies, and know when a cookie is being sent to your computer. If you choose to refuse our cookies, you may not be able to use some portions of our Service.
+			</p>
+			<p>
+				You can learn how to manage cookies on your web browser by following the Browser Cookies Guide.
+			</p>
+			<h4>
+				Service Providers
+			</h4>
+			<p>
+				We may employ third-party companies and individuals due to the following reasons:
+			</p>
+			<p>
+				•	To facilitate our Service;
+			</p>
+			<p>
+				•	To provide the Service on our behalf;
+			</p>
+			<p>
+				•	To perform Service-related services; or
+			</p>
+			<p>
+				•	To assist us in analyzing how our Service is used.
+			</p>
+			<p>
+				We want to inform our Service users that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose.
+			</p>
+			<h4>
+				Security
+			</h4>
+			<p>
+				We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.
+			</p>
+			<h4>
+				Links to Other Sites
+			</h4>
+			<p>
+				Our Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by us. Therefore, we strongly advise you to review the Privacy Policy of these websites. We have no control over, and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.
+			</p>
+			<h4>
+				Children’s Privacy
+			</h4>
+			<p>
+				Our Services do not address anyone under the age of 13. We do not knowingly collect personal identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.
+			</p>
+			<h4>
+				Changes to This Privacy Policy
+			</h4>
+			<p>
+				We may update our Privacy Policy from time to time. Thus, we advise you to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately, after they are posted on this page. Our GDPR Privacy Policy was generated from the Privacy Policy Template.
+			</p>
+			<h4>
+				Contact Us
+			</h4>
+			<p>
+				If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us.
+			</p>
+		</div>
+	</div>
+    <header class="headerBox lan">
+      <div class="gol">
+        <div class="">
+          <img class="pull-left" src="image/Top_Logo.png"/>
+          <ul class="pull-left">
+            <li class="pull-left buyCzip">
+              <h3>Buy GZIP</h3>
+
+              <div class="pull-left" style="margin-left: 40px;border-left: 1px solid #fff;">
+                <h2>
+                  $40.00
+                </h2>
+                <h4>
+                  USD - GZIP
+                </h4>
+                <p>
+                  <img src="image/MRKT_UP.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+              <div class="pull-left">
+                <h2>
+                  HK$314.00
+                </h2>
+                <h4>
+                  HKD - GZIP
+                </h4>
+                <p>
+                  <img src="image/MRKT_UP.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+            </li>
+            <li class="pull-left buyCzip">
+              <h3>Sell GZIP</h3>
+
+              <div class="pull-left">
+                <h2>
+                  $40.00
+                </h2>
+                <h4>
+                  USD - GZIP
+                </h4>
+                <p style="color: #fe4747">
+                  <img src="image/MRKT_DWN.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+              <div class="pull-left">
+                <h2>
+                  HK$314.00
+                </h2>
+                <h4>
+                  HKD - GZIP
+                </h4>
+                <p style="color: #fe4747">
+                  <img src="image/MRKT_DWN.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+        <p>
+          <a href="#one">
+            ABOUT
+          </a>
+          <a href='#two'>
+            MEMBERS
+          </a>
+          <a href="#three">
+            AFFILIATES
+          </a>
+          <a class="lanSelect_en" href="javascript:;" style="margin-right: 0px;">
+            EN
+          </a>
+          <span style="font-size: 25px;">/</span>
+          <a class="lanSelect_ch" href="javascript:;" style="margin-left: 0px;">
+            中文
+          </a>
+        </p>
+      </div>
+      <h1>
+        MAKING GOLD INVESTMENT SIMPLE
+      </h1>
+      <h2 class="stable">
+        CREDIBLE.LIQUID.STABLE.
+      </h2>
+    </header>
+    <header class="headerBox lan1">
+      <div class="gol">
+        <div class="">
+          <img class="pull-left" src="image/Top_Logo.png"/>
+          <ul class="pull-left">
+            <li class="pull-left buyCzip">
+              <h3>购买GZIP</h3>
+
+              <div class="pull-left" style="margin-left: 40px;border-left: 1px solid #fff;">
+                <h2>
+                  $40.00
+                </h2>
+                <h4>
+                  USD - GZIP
+                </h4>
+                <p>
+                  <img src="image/MRKT_UP.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+              <div class="pull-left">
+                <h2>
+                  HK$314.00
+                </h2>
+                <h4>
+                  UKD - GZIP
+                </h4>
+                <p>
+                  <img src="image/MRKT_UP.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+            </li>
+            <li class="pull-left buyCzip">
+              <h3>出售GZIP</h3>
+
+              <div class="pull-left">
+                <h2>
+                  $40.00
+                </h2>
+                <h4>
+                  USD - GZIP
+                </h4>
+                <p style="color: #fe4747">
+                  <img src="image/MRKT_DWN.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+              <div class="pull-left">
+                <h2>
+                  HK$314.00
+                </h2>
+                <h4>
+                  UKD - GZIP
+                </h4>
+                <p style="color: #fe4747">
+                  <img src="image/MRKT_DWN.png"/>
+                  1.52(10.26%)
+                </p>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+        <p>
+          <a href="#one">
+            关于
+          </a>
+          <a href='#two'>
+            成员
+          </a>
+          <a href="#three_ch">
+            附属公司
+          </a>
+          <a class="lanSelect_en" href="javascript:;" style="margin-right: 0px;">
+            EN
+          </a>
+          <span style="font-size: 25px;">/</span>
+          <a class="lanSelect_ch" href="javascript:;" style="margin-left: 0px;">
+            中文
+          </a>
+        </p>
+      </div>
+      <h1>
+        让黄金投资更简单
+      </h1>
+      <h2 class="stable">
+        可靠。流动。稳定。
+      </h2>
+    </header>
+
+
+    <div class="webBackNav webNavBox">
+      <div class="newBack">
+        <div style="padding: 0px 13px;">
+          <header class="webNav" style="border-bottom: 1px solid #fff">
+            <p style="display: flex;justify-content: space-between;align-items: center;padding: 0px;">
+              <img width="180px;" src="image/2cf7237549ac0dcf871359d7e05aa78.png"/>
+              <img src="image/clickWeb.png"/>
+            </p>
+            <ul class="text-center">
+              <li class="lan">
+                <a href="#one">
+                  ABOUT
+                </a>
+              </li>
+              <li class="lan1">
+                <a href="#one">
+                  关于
+                </a>
+              </li>
+              <li class="lan">
+                <a href="#two">
+                  MEMBERS
+                </a>
+              </li>
+              <li class="lan1">
+                <a href="#two">
+                  成员
+                </a>
+              </li>
+              <li class="lan">
+                <a href="#three_ch">
+                  AFFILIATES
+                </a>
+              </li>
+              <li class="lan1">
+                <a href="#three_ch">
+                  附属公司
+                </a>
+              </li>
+
+              <li>
+                
+                <a class="lanSelect_en" href="javascript:;" style="margin-right: 0px;">
+                  EN
+                </a>
+                <span style="font-size: 25px;">/</span>
+                <a class="lanSelect_ch" href="javascript:;" style="margin-left: 0px;">
+                  中文
+                </a>
+
+              </li>
+            
+            </ul>
+          </header>
+          <ul>
+            <h1 class="lan" style="text-align: center;font-size: 23px;">
+              MAKING GOLD INVESTMENT SIMPLE
+            </h1>
+            <h1 class="lan1" style="text-align: center;font-size: 23px;">
+              让黄金投资更简单
+            </h1>
+            <h1 class="lan" style="position: absolute;bottom: 0px;width: 100%;left: 0px;font-size: 23px;text-align: center;">CREDIBLE.LIQUID.STABLE.</h1>
+            <h1 class="lan1" style="position: absolute;bottom: 0px;width: 100%;left: 0px;font-size: 23px;text-align: center;">可靠。流动。稳定。</h1>
+          </ul>
+        </div>
+      </div>
+      <div style="background-color: #242424;padding: 0px 13px;">
+        <ul class="buyCzipBox">
+          <li class="buyCzip">
+            <h3 class="lan">Buy GZIP</h3>
+            <h3 class="lan1">购买GZIP</h3>
+            <div>
+              <h2>
+                $40.00
+              </h2>
+              <h4>
+                USD - GZIP
+              </h4>
+              <p>
+                <img src="image/MRKT_UP.png"/>
+                1.52(10.26%)
+              </p>
+            </div>
+
+            <div>
+              <h2>
+                HK$314.00
+              </h2>
+              <h4>
+                HKD - GZIP
+              </h4>
+              <p>
+                <img src="image/MRKT_UP.png"/>
+                1.52(10.26%)
+              </p>
+            </div>
+
+          </li>
+          <li class="buyCzip">
+            <h3 class="lan">Sell GZIP</h3>
+            <h3 class="lan1">出售GZIP</h3>
+            <div>
+              <h2>
+                $40.00
+              </h2>
+              <h4>
+                USD - GZIP
+              </h4>
+              <p style="color: #fe4747">
+                <img src="image/MRKT_DWN.png"/>
+                1.52(10.26%)
+              </p>
+            </div>
+
+            <div>
+              <h2>
+                HK$314.00
+              </h2>
+              <h4>
+                HKD - GZIP
+              </h4>
+              <p style="color: #fe4747">
+                <img src="image/MRKT_DWN.png"/>
+                1.52(10.26%)
+              </p>
+            </div>
+
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container" id="oneBox">
+      <div id="one">
+        <div class="row lan">
+          <div class="col-xs-12 col-sm-12">
+              <div class="aboutBox">
+                <h4>
+                  ABOUT
+                </h4>
+                <p>
+                  Every GOLDZIP (GZIP) represents an official CGSE Gold Receipt that’s equivalent to one (1) gram of gold in $300 million worth of physical 999.9 Gold Bars securely stored in the vaults of The Chinese Gold and Silver Exchange Society (”CGSE”) in Hong Kong. 
+                </p>
+                <p class="text-center">
+                  <img src="image/_GZIP-REC-1G.png"/>
+                </p>
+                <p>
+				  Hence each GZIP (CGSE digital gold receipt) is equivalent to 1 gram of gold. GOLDZIP can be further divided into smaller denominations such as 0.1 or 0.60221407 and so on, making it suitable for small to high volume trades on a daily basis.
+                </p>
+                <p>
+                  GOLDZIP represents the perfect alternative to a direct purchase of gold bullion.
+                </p>
+                <p style="font-size: 15px;">
+                  *USD$ 300M equivalent in 999.9 gold bars is backing GZIP at launch. GZIP targets to hit USD$ 1 billion of gold backing the token within a 12 months period.
+                </p>
+                <hr style="border-top: 1px solid #000;margin: 50px 0px;" />
+              </div>
+				
+			  
+			  
+			  
+              <div class="credible">
+				<h2>
+					The GOLDZIP Advatage
+				</h2>
+                <nav>
+                  <ul>
+                    <li>
+                      <p>
+                        <img src="image/RELY.png"/>
+                      </p>
+                      <h3>CREDIBLE</h3>
+                      <p>
+						CGSE is the only Gold and Silver exchange in Hong Kong and has been in the Gold trading business for more than 100 years, and during that time have built a great reputation and respect as an institution.                      
+					  </p>
+                      <p>
+                        CGSE has a mutual and cooperative relationship with the Hong Kong government, adding more credibility and accountability.
+                      </p>
+                      <p>
+                        The GOLDZIP reserve will be audited by renowned 3rd party auditing firm like PWC, KPMG etc. and will be published in the official website every month.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <img src="image/LIQUID.png"/>
+                      </p>
+                      <h3>LIQUID</h3>
+                      <p>
+                        With CGSE’s 171 members (and counting) and GOLDZIP being listed on top trading platforms, GOLDZIP will be one of the most liquid assets in the market, making it easy to buy, sell and trade for individuals and institutions alike.
+                      </p>
+                      <p>
+                        In the future, a holder will be able to just walk-in on any participating store or merchant and use Gold to purchase goods or pay for services.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <img src="image/Stable.png"/>
+                      </p>
+                      <h3>STABLE</h3>
+                      <p>
+						Having GOLDZIP is the same as having physical gold in your hands, except, GOLDZIP is much more portable and easy to use. Gold has a long history of being a hedge against volatility and market instability.
+                      </p>
+                      <p>
+						This also applies to GOLDZIP, since GOLDZIP is pegged to the Gold price per gram, a GOLDZIP holder will get the same benefits and advantages of Gold's price stability.
+                      </p>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="dl">
+                  <img src="image/DL.png"/>
+                  <a href="javascript:;">$300M Gold Audit report 12-25-18</a>
+                </p>
+                <p class="dl">
+                  <img src="image/DL.png"/>
+                  <a href="javascript:;">GoldZip White/Light paper</a>
+                </p>
+              </div>
+          
+          </div>
+        </div>
+
+        <div class="row lan1">
+          <div class="col-xs-12 col-sm-12">
+              <div class="aboutBox">
+                <h4>
+                  关于
+                </h4>
+                <p>
+                  每一枚GOLDZIP (GZIP)都代表一张CGSE官方金票，等于一克千足金。这些金块总价3亿美元，安全地保管在CGSE的金库里。
+                </p>
+                <p class="text-center">
+                  <img src="image/_GZIP-REC-1G.png"/>
+                </p>
+                <p>
+                  因此每一枚GZIP（CGSE电子黄金收据）都等价于一克黄金。GOLDZIP可以精确到更小的数位，如0.1、 0.60221407甚至更小，让它能同时适应日常大小额交易。
+                </p>
+                <p>
+                  GOLDZIP是金块直购的完美替代。
+                </p>
+                <p style="font-size: 15px;">
+                  *这个数字代表的是当前价值，未来可能会根据市场需求而提高。
+                </p>
+                <hr style="border-top: 1px solid #000;margin: 50px 0px;" />
+              </div>
+        
+
+              <div class="credible">
+				<h2>
+					GOLD ZIP优势
+				</h2>
+                <nav>
+                  <ul>
+                    <li>
+                      <p>
+                        <img src="image/RELY.png"/>
+                      </p>
+                      <h3>可靠</h3>
+                      <p>
+                        CGSE是香港唯一一家金银交易所，在黄金交易业已有108年的历史。在这百年间，他们建立了良好的口碑，赢得尊敬。
+                      </p>
+                      <p>
+                        他们和香港政府有“互助合作”的关系，更增加他们的可信度。
+                      </p>
+                      <p>
+                        GOLDZIP的储备黄金将由知名的第三方审计事务所，如PW和KPMG审计，并每月发布在官网上。
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <img src="image/LIQUID.png"/>
+                      </p>
+                      <h3>流动</h3>
+                      <p>
+                        CGSE当前有171个成员，并在不断增加中。GOLDZIP将在顶级交易平台上市，成为市面上流动性最强的资产之一，个人和机构都可以轻松买卖交易。
+                      </p>
+                      <p>
+                        未来，你可以走进任意一家成员商店或贸易商，用你的GZIP购买商品或服务。
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        <img src="image/Stable.png"/>
+                      </p>
+                      <h3>稳定</h3>
+                      <p>
+                        持有GoldZip和持有实体黄金一模一样。唯一的区别就是GoldZip的便携性和方便度更强。黄金长久以来一直是经济波动或者市场崩溃危机中良好的保值品。  
+                      </p>
+                      <p>
+                        GOLDZIP也是如此。因为GOLDZIP与金价的绑定效果，它也具有金价稳定的优势。
+                      </p>
+                    </li>
+                  </ul>
+                </nav>
+                <p class="dl">
+                  <img src="image/DL.png"/>
+                  <a href="javascript:;">3亿美金黄金审计报告 12-25-18</a>
+                </p>
+                <p class="dl">
+                  <img src="image/DL.png"/>
+                  <a href="javascript:;">GoldZip白皮书</a>
+                </p>
+              </div>
+          
+          </div>
+        </div>
+      </div>
+
+      <div class="row lan">
+        <div class="col-xs-1 col-sm-1"></div>
+        <div class="col-xs-9 col-sm-9">
+          <div class="chinese">
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;" />
+            <h3>THE CHINESE GOLD & SILVER EXCHANGE SOCIETY (CGSE)</h3>
+            <p class="banr">
+              <img width="100%" src="image/CGSE_BANR.png"/>
+            </p>
+            <p>
+			  Founded in 1910, the Chinese Gold and Silver Exchange Society (“CGSE”) is the sole exchange in Hong Kong which trades physical gold and silver.  Since inception, this home-grown, member-owned and self-regulated exchange has developed and expanded to become a thriving metal exchange with a solid foundation and strong tradition.
+            </p>
+            <p>
+			  CGSE is a metal exchange which combines both spot and futures contracts. In addition to delivery of physical metals, the trading parties can offer to pay a premium to defer the contract delivery, thereby performing the function of futures market. This unique trading mechanism was the brainchild of the early founders of CGSE, who through ingenuity and foresight created a platform that is still in use today, standing the test of time, and operating today as smoothly and effectively as in the early years.
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-1 col-sm-1"></div>
+      </div>
+
+      <div class="row lan1">
+        <div class="col-xs-1 col-sm-1"></div>
+        <div class="col-xs-9 col-sm-9">
+          <div class="chinese">
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;" />
+            <h3>中国金银贸易场（CGSE）</h3>
+            <p class="banr">
+              <img width="100%" src="image/CGSE_BANR.png"/>
+            </p>
+            <p>
+			  中国金银业贸易场（CGSE）创立于1910年，是香港唯一一家实体金银交易所。创立至今，这家扎根本土、成员共同拥有、自我约束的交易所不断发展扩张。经过数年的蓬勃发展，CGSE成为香港，乃至全球范围内根基稳健、欣欣向荣的金属交易所。
+            </p>
+            <p>
+			  CGSE同时处理现货和期货。除了实体黄金的交付，交易方还可以预付定金，延期合同交付，从而实现期货市场的功能。这个独有机制是CGSE的创始人多年前集思广益，花费大量人力物力创造出来的成果。该交易机制经受住了时间的考验，可以高效流畅地运行。
+            </p>
+          </div>
+        </div>
+        <div class="col-xs-1 col-sm-1"></div>
+      </div>
+
+      <div class="row major lan">
+        <div class="col-xs-12 col-sm-12">
+          <h3>
+            1 OF THE MAJOR GOLD TRADING HUBS
+          </h3>
+          <p>
+            <img width="100%" src="image/WORLD.png"/>
+          </p>
+          <p style="text-align: right;">
+            *Reference: World Gold Council
+          </p>
+          <h4>
+			For more than one hundred years, CGSE has adhered to a stringent and effective set of rules and regulations. Although constantly tested, the integrity of industry members is always upheld, and they play a vital role in Hong Kong's gold market. CGSE provides local and international investors with a gold market of continuity, liquidity and depth, in which they can use gold as an instrument of investment, speculation, hedging and arbitrage.
+          </h4>
+          <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+        </div>
+      </div>
+
+      <div class="row major lan1">
+        <div class="col-xs-12 col-sm-12">
+          <h3>
+            黄金交易枢纽之一
+          </h3>
+          <p>
+            <img width="100%" src="image/WORLD.png"/>
+          </p>
+          <p style="text-align: right;">
+            *参考：世界黄金协会
+          </p>
+          <h4>
+			在百年间，CGSE一直恪守原则。尽管屡受考验，但行业成员作为香港黄金市场里的重要角色，一直秉持诚信，CGSE为当地和国际投资者创造了一个连贯、流通、有深度的黄金市场；投资者可以用黄金投资、投机、对冲或者套利。
+          </h4>
+          <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+        </div>
+      </div>
+      <div id="two">
+        <div class="row membersBox lan">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-9 col-sm-9">
+            <h4>
+              CGSE MEMBERS
+            </h4>
+            <p>
+				CGSE’s 171 members represent the industry of global gold trading, with brand names such as CHOW TAI FOOK, EMPEROR, GOLDENWAY and many more paving the way for CGSE’s Digital Gold platform with liquidity ensured. GOLDZIP is the new digital gold that will not just be traded on the blockchain and exchanges but over the counters (OTC) of many jewelers and stores from Hong Kong, Asia and eventually worldwide. 
+            </p>
+            <p>
+				GZIP tokens can be spent via VISA and MASTERCARD debit cards specially issued by GOLDZIP. This is true liquidity across the globe when you can use your GZIP to buy a cup of coffee in Starbucks.
+            </p>
+            <nav>
+              <ul>
+                <li>
+                  <img src="image/CTF.png"/>
+                  <img src="image/EMPE.png"/>
+                  <img src="image/GW.png"/>
+                </li>
+                <li>
+                  <img src="image/6ed40c1a298da011d12cbd81835afd3.png"/>
+                  <img src="image/d6fe327f96a782d0bf3c52d5fabaf19.png"/>
+                  <img src="image/fdef1e1cc5ee6f142f3927efff102e9.png"/>
+                </li>
+              </ul>
+            </nav>
+
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+
+            <div class="row newBox">
+              <div class="col-xs-12 col-sm-12">
+                <h4>  
+                  NEWS
+                </h4>
+                <ul>
+                  <li>
+                    <img src="image/CT.png"/>
+                    <h5>
+                      WE'RE FEATURED IN CT!
+                    </h5>
+                    <p>
+                      "The New Digital Gold",that...
+                    </p>
+                    <a href="javascript:;">
+                      LEARN MORE
+                    </a>
+                    <label>
+                      NOV 19
+                    </label>
+                  </li>
+                  <li>
+                    <img src="image/Binance.png"/>
+                    <h5>
+                      GOLDZIP NOW LISTED ON BINANCE!
+                    </h5>
+                    <p>
+                      We are proud to announce...
+                    </p>
+                    <a href="javascript:;">
+                      LEARN MORE
+                    </a>
+                    <label>
+                      NOV 15
+                    </label>
+                  </li>
+                  <li>
+                    <img src="image/UAE.png"/>
+                    <h5>
+                      WE'RE FLYNG TO DUBAI
+                    </h5>
+                    <p>
+                      We will attend the Global...
+                    </p>
+                    <a href="javascript:;">
+                      LEARN MORE
+                    </a>
+                    <label>
+                      NOV 10
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+            <div class="row meetUs">
+              <div class="col-xs-12 col-sm-12">
+                <h4>  
+                  MEET US!
+                </h4>
+                <div class="">
+                  <ul>
+					<!--
+                    <li>
+                      <h5>
+                          NOVEMBER
+                      </h5>
+                    </li>
+                    <li>
+                      <p>
+                        17:<span style="margin-left: 20px;">BALI, INDONESIA | BLOCKBALI</span>
+                      </p>
+                      <img src="image/BlockBali.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        21~22:<span style="margin-left: 20px;">DUBAI, UAE | GLOBAL BLOCKHAIN FOUNDATION</span>
+                      </p>
+                      <img src="image/GBF_Logo.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26~27:<span style="margin-left: 20px;">BANGKOK, THAILAND | BEYOND BLOCKS</span>
+                      </p>
+                      <img src="image/Beyond.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26~27:<span style="margin-left: 20px;">SINGAPORE | THE BLOCK SHOW</span>
+                      </p>
+                      <img src="image/Blockshow.png"/>
+                    </li>
+					-->
+					
+					
+                    <li>
+                      <h5>
+                          January 2019
+                      </h5>
+                    </li>
+					
+                    <li>
+                      <p>
+                        16-18:<span style="margin-left: 20px;">The North American Bitcoin Conference - Miami, USA</span>
+                      </p>
+                      <img width="500px;" src="image/The North American Bitcoin Conference.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        21-22:<span style="margin-left: 20px;">PG & BG & PC Connects London 2019 - London, UK</span>
+                      </p>
+                      <img width="500px;" src="image/PG & BG & PC Connects London 2019.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        23-24:<span style="margin-left: 20px;">Security Tokens Realised - London, UK</span>
+                      </p>
+                      <img width="500px;" src="image/SECURITY-TOKENS-logo-dark_bg.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        24-25:<span style="margin-left: 20px;">World Blockchain Summit - Taipei, China</span>
+                      </p>
+                      <img width="500px;" src="image/World Blockchain Summit - Taipei.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26:<span style="margin-left: 20px;">Provenance - Hong Kong, China</span>
+                      </p>
+                      <img width="500px;" src="image/Provenance summit.png"/>
+                    </li>
+					
+					
+                    <li>
+                      <h5>
+                          February 2019
+                      </h5>
+                    </li>
+                    <li>
+                      <p>
+                        07:<span style="margin-left: 20px;">BlockMumbai Blockchain Conference - Mumbai, India</span>
+                      </p>
+                      <img width="500px;" src="image/BlockMumbai Blockchain Conference - Mumbai.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        8-14:<span style="margin-left: 20px;">London Blockchain Week – London, UK</span>
+                      </p>
+                      <img width="500px;" src="image/London Blockchain Week – London.jpg"/>
+                    </li>
+                    <li>
+                      <p>
+                        20:<span style="margin-left: 20px;">Blockchain Economy Istanbul Summit - Istanbul, Turkey</span>
+                      </p>
+                      <img width="500px;" src="image/Blockchain Economy Istanbul Summit.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        27:<span style="margin-left: 20px;">Blockchain Summit Series - Hong Kong, China</span>
+                      </p>
+                      <img width="500px;" src="image/Blockchain Summit Series - Hong Kong.png"/>
+                    </li>
+                    <li>
+                      <h5>
+                          March 2019
+                      </h5>
+                    </li>
+                    
+                    <li>
+                      <p>
+                        4-8:<span style="margin-left: 20px;">HK Blockchain Week, Hong Kong, China</span>
+                      </p>
+                      <img width="500px;" src="image/HK Blockchain Week, Hong Kong.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        11-17:<span style="margin-left: 20px;">Asia Crypto Week, Hong Kong, China</span>
+                      </p>
+                      <img width="500px;" src="image/Asia Crypto Week Hong Kong.jpg"/>
+                    </li>
+                    <li>
+                      <p>
+                        13-14:<span style="margin-left: 20px;">TOKEN2049 - Hong Kong, China</span>
+                      </p>
+                      <img width="500px;" src="image/TOKEN2049 - HONGKONG.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        18-22:<span style="margin-left: 20px;">Game Developers Conference - San Francisco, USA</span>
+                      </p>
+                      <img width="500px;" src="image/GDC San Francisco 2019.jpg"/>
+                    </li>
+					
+					
+					
+                  </ul>
+                  <h4 style="font-size: 30px;">
+                    We're always open for meetings,contact us today!
+                  </h4>
+                  <h5>
+                    contact@goldzip.io
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+            
+            <div class="affilate" id="three">
+              <h4>
+                AFFILIATE LINKS
+              </h4>
+              <p>
+                <a href="https://www.cgse.com.hk">CGSE Official Website: https://www.cgse.com.hk</a>
+              </p>
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Chinese_Gold_and_Silver_Exchange_Society">CGSE Wikipedia: https://en.wikipedia.org/wiki/Chinese_Gold_and_Silver_Exchange_Society</a>
+              </p>
+              <p>
+                <a href="https://www.goldzip.com">GoldZip Official Marketing: https://www.goldzip.com</a>
+              </p>
+              <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+            </div>
+
+            <div class="maling text-center">
+              <img src="image/Gzip_logo.png"/>
+              <p>
+                MAKING GOLD INVESTMENT SIMPLE
+              </p>
+            </div>
+
+
+
+            <div class="powered text-center">
+              <p>Powered by</p>
+              <img src="image/CGSE_LOGO.png"/>
+            </div>
+
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+
+        <div class="row membersBox lan1">
+          <div class="col-xs-1 col-sm-1"></div>
+          <div class="col-xs-9 col-sm-9">
+            <h4>
+              CGSE成员
+            </h4>
+            <p>
+              目前，CGSE共有171名成员，其中有30名同时也是金银集团的成员。我们的所有成员都在香港注册。他们以不同的身份注册，如个营业主、合伙人或者有限公司。老会员可以介绍新会员入会，入会申请必须递交给执行委员会和监督委员会。
+            </p>
+            <nav>
+              <ul>
+                <li>
+                  <img src="image/CTF.png"/>
+                  <img src="image/EMPE.png"/>
+                  <img src="image/GW.png"/>
+                </li>
+                <li>
+                  <img src="image/6ed40c1a298da011d12cbd81835afd3.png"/>
+                  <img src="image/d6fe327f96a782d0bf3c52d5fabaf19.png"/>
+                  <img src="image/fdef1e1cc5ee6f142f3927efff102e9.png"/>
+                </li>
+              </ul>
+            </nav>
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+
+            <div class="row newBox">
+              <div class="col-xs-12 col-sm-12">
+                <h4>  
+                  新闻
+                </h4>
+                <ul>
+                  <li>
+                    <img src="image/CT.png"/>
+                    <h5>
+                      我们在CT榜上有名！
+                    </h5>
+                    <p>
+                      “全新的电子黄金”
+                    </p>
+                    <a href="javascript:;">
+                      了解更多
+                    </a>
+                    <label>
+                      NOV 19
+                    </label>
+                  </li>
+                  <li>
+                    <img src="image/Binance.png"/>
+                    <h5>
+                      GOLDZIP现已在BINANCE上市！
+                    </h5>
+                    <p>
+                      我们自豪地宣布……
+                    </p>
+                    <a href="javascript:;">
+                      了解更多
+                    </a>
+                    <label>
+                      NOV 15
+                    </label>
+                  </li>
+                  <li>
+                    <img src="image/UAE.png"/>
+                    <h5>
+                      我们要飞去迪拜
+                    </h5>
+                    <p>
+                      我们将参与全球……
+                    </p>
+                    <a href="javascript:;">
+                      了解更多
+                    </a>
+                    <label>
+                      NOV 10
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+            <div class="row meetUs">
+              <div class="col-xs-12 col-sm-12">
+                <h4>  
+                  来认识我们！
+                </h4>
+                <div class="">
+                  <ul>
+				  <!--
+                    <li>
+                      <h5>
+                          十一月
+                      </h5>
+                    </li>
+                    <li>
+                      <p>
+                        17:<span style="margin-left: 20px;">巴厘岛，印度尼西亚|BLOCKBALI</span>
+                      </p>
+                      <img src="image/BlockBali.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        21~22:<span style="margin-left: 20px;">迪拜，阿联酋|全球BLOCKCHAIN基金会</span>
+                      </p>
+                      <img src="image/GBF_Logo.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26~27:<span style="margin-left: 20px;">曼谷，泰国| BEYND BLOCKS</span>
+                      </p>
+                      <img src="image/Beyond.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26~27:<span style="margin-left: 20px;">新加坡|块展示</span>
+                      </p>
+                      <img src="image/Blockshow.png"/>
+                    </li>
+					-->
+					<li>
+                      <h5>
+                          2019年1月
+                      </h5>
+                    </li>
+					
+                    <li>
+                      <p>
+                        16-18:<span style="margin-left: 20px;">北美比特币会议 - 美国迈阿密</span>
+                      </p>
+                      <img width="500px;" src="image/The North American Bitcoin Conference.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        21-22:<span style="margin-left: 20px;">PG＆BG＆PC Connects伦敦2019年 - 伦敦，英国</span>
+                      </p>
+                      <img width="500px;" src="image/PG & BG & PC Connects London 2019.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        23-24:<span style="margin-left: 20px;">安全令牌已实现 - 英国伦敦</span>
+                      </p>
+                      <img width="500px;" src="image/SECURITY-TOKENS-logo-dark_bg.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        24-25:<span style="margin-left: 20px;">世界区块链峰会 - 中国台北</span>
+                      </p>
+                      <img width="500px;" src="image/World Blockchain Summit - Taipei.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        26:<span style="margin-left: 20px;">来源 - 中国香港</span>
+                      </p>
+                      <img width="500px;" src="image/Provenance summit.png"/>
+                    </li>
+					
+					
+                    <li>
+                      <h5>
+                          2019年2月
+                      </h5>
+                    </li>
+                    <li>
+                      <p>
+                        07:<span style="margin-left: 20px;">BlockMumbai区块链会议 - 印度孟买</span>
+                      </p>
+                      <img width="500px;" src="image/BlockMumbai Blockchain Conference - Mumbai.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        8-14:<span style="margin-left: 20px;">伦敦区块链周 - 英国伦敦</span>
+                      </p>
+                      <img width="500px;" src="image/London Blockchain Week – London.jpg"/>
+                    </li>
+                    <li>
+                      <p>
+                        20:<span style="margin-left: 20px;">Blockchain经济伊斯坦布尔山顶 - 伊斯坦布尔，土耳其</span>
+                      </p>
+                      <img width="500px;" src="image/Blockchain Economy Istanbul Summit.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        27:<span style="margin-left: 20px;">Blockchain Summit系列 - 中国香港</span>
+                      </p>
+                      <img width="500px;" src="image/Blockchain Summit Series - Hong Kong.png"/>
+                    </li>
+                    <li>
+                      <h5>
+                          2019年3月
+                      </h5>
+                    </li>
+                    
+                    <li>
+                      <p>
+                        4-8:<span style="margin-left: 20px;">香港区块链周，中国香港</span>
+                      </p>
+                      <img width="500px;" src="image/HK Blockchain Week, Hong Kong.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        11-17:<span style="margin-left: 20px;">亚洲加密周，中国香港</span>
+                      </p>
+                      <img width="500px;" src="image/Asia Crypto Week Hong Kong.jpg"/>
+                    </li>
+                    <li>
+                      <p>
+                        13-14:<span style="margin-left: 20px;">TOKEN2049  - 中国香港</span>
+                      </p>
+                      <img width="500px;" src="image/TOKEN2049 - HONGKONG.png"/>
+                    </li>
+                    <li>
+                      <p>
+                        18-22:<span style="margin-left: 20px;">游戏开发者大会 - 美国旧金山</span>
+                      </p>
+                      <img width="500px;" src="image/GDC San Francisco 2019.jpg"/>
+                    </li>
+					
+					
+					
+                  </ul>
+                  <h4 style="font-size: 30px;">
+                    我们永远接受会见，马上联系我们吧！
+                  </h4>
+                  <h5>
+                    contact@goldzip.io
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+
+            <div class="affilate" id="three_ch">
+              <h4>
+                附属链接
+              </h4>
+              <p>
+                <a href="https://www.cgse.com.hk">CGSE官方网站: https://www.cgse.com.hk</a>
+              </p>
+              <p>
+                <a href="https://en.wikipedia.org/wiki/Chinese_Gold_and_Silver_Exchange_Society">CGSE维基: https://en.wikipedia.org/wiki/Chinese_Gold_and_Silver_Exchange_Society</a>
+              </p>
+              <p>
+                <a href="https://www.goldzip.com">GoldZip营销官网: https://www.goldzip.com</a>
+              </p>
+              <hr style="border-top: 1px solid #000;margin: 50px 0px;">
+            </div>
+
+            <div class="maling text-center">
+              <img src="image/Gzip_logo.png"/>
+              <p>
+                让黄金投资更简单
+              </p>
+            </div>
+
+
+
+            <div class="powered text-center">
+              <p>Powered by</p>
+              <img src="image/CGSE_LOGO.png"/>
+            </div>
+
+          </div>
+          <div class="col-xs-1 col-sm-1"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="cgse">
+      <nav>
+        <ul>
+          <li>
+            <h5>
+              *CGSE
+            </h5>
+            <p>
+              3/F.Gold & Silver Comm.Bldg,12-18
+            </p>
+            <p>
+              Mercer,Street Sheung Wan,Hong Kong.
+            </p>
+            <p>
+              (852)3678 0000
+            </p>
+            </p>
+          </li>
+          <li>
+            <h5>
+              Policies
+            </h5>
+            <p class="policy">
+              Privacy Policy
+            </p>
+            <!-- <p>
+              Terms of Servise
+            </p> -->
+          </li>
+          <li>
+            <h5>
+              Contact
+            </h5>
+            <p>contact@goldzip.io</p>
+          </li>
+          <li>
+            <h5>
+              @Copyright 2018 CGSE / GoldZip
+            </h5>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+  </div>
+
+
+
+
+	<script>
+
+    $(document).ready(function(){
+
+      let lan = localStorage.lan;
+      console.log(lan);
+      if(lan==1){
+        $('.lanSelect_ch').css({'text-decoration':'underline'});
+        $('.lan1').show();
+      }else{
+        $('.lanSelect_en').css({'text-decoration':'underline'});
+        $('.lan').show();
+      }
+    });
+
+
+    $('.lanSelect_ch').on('click',function(){
+      localStorage.lan = 1;
+      window.location.reload();
+    });
+
+    $('.lanSelect_en').on('click',function(){
+      localStorage.lan = 0;
+      window.location.reload();
+    });
+
+
+    $('.webBackNav img').on('click',function(){
+      $('.webBackNav ul.text-center').toggle(200);
+    });
+	$('.popupBox img').on('click',function(){
+		$('.popupBox').hide();
+	});
+	$('.policy').on('click',function(){
+		$('.popupBox').show();
+	});
+
+	</script>
+
+</body>
+</html>
